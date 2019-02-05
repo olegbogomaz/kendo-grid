@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kendo Grid Evaluation</title>
+    <link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-default@latest/dist/all.css" />
+    <style>
+        .k-grid-content {
+            -webkit-overflow-scrolling: touch;
+        }
+        tr.k-master-row td,
+        th.k-header {
+            width: 100px;
+        }
+    </style>
+    <script>
+        var require = {
+            paths: {
+                'react': 'lib/react.development',
+                'react-dom': 'lib/react-dom.development',
+                'prop-types': 'lib/prop-types',                
+                'react-dom/server': 'lib/react-dom-server.browser.production.min',
+                'react-transition-group': 'lib/react-transition-group',
+                '@progress/kendo-react-grid': 'lib/kendo-react-grid',
+                '@progress/kendo-react-intl': 'lib/kendo-react-intl'
+            }
+        };
+    </script>
+    <script src="lib/require.js" data-main="main.js"></script>
+</head>
+
+<body>
+    <h1>Kendo Grid Evaluation</h1>
+    <div id="mount" style="min-height: 400px; min-width: 600px;">Loading...</div>
+</body>
+
+</html>
